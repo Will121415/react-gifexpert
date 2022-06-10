@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <GifGrid /> Debe funcionar correctamente 1`] = `
+<Fragment>
+  <h3>
+    One Punch
+  </h3>
+  <strong>
+    Loading...
+  </strong>
+  <div
+    className="card-grid animate__animated animate__fadeIn"
+  />
+</Fragment>
+`;

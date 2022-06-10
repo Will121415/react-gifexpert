@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruba en el componente <GridGifItem /> Debe de mostrar el componente correctamente 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt="Titulo del GIF"
+    src="https://media2.giphy.com/media/l0HlZ9q2fjX9q/200.gif"
+  />
+  <p>
+    Titulo del GIF
+  </p>
+</div>
+`;

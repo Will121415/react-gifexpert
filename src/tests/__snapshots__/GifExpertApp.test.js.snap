@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <GifExpertApp /> Debe de mostrar el componente correctamente 1`] = `
+<Fragment>
+  <h1
+    className="animate__animated animate__fadeInRightBig"
+  >
+    GifExpertApp
+  </h1>
+  <AddCategory
+    setCategory={[Function]}
+  />
+  <hr />
+  <ol />
+</Fragment>
+`;
+
+exports[`Pruebas en el componente <GifExpertApp /> Debe de mostrar una lista de categorias 1`] = `
+<Fragment>
+  <h1
+    className="animate__animated animate__fadeInRightBig"
+  >
+    GifExpertApp
+  </h1>
+  <AddCategory
+    setCategory={[Function]}
+  />
+  <hr />
+  <ol>
+    <GifGrid
+      category="One Punch"
+      key="One Punch"
+    />
+    <GifGrid
+      category="Samurai X"
+      key="Samurai X"
+    />
+    <GifGrid
+      category="Dragon Ball"
+      key="Dragon Ball"
+    />
+  </ol>
+</Fragment>
+`;

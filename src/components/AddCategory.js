@@ -13,12 +13,14 @@ export const AddCategory = ( {setCategory} ) => {
         event.preventDefault();
         if(inputValue.trim().length > 2) {
             setCategory(category => [inputValue, ...category]);
+            // setCategory(251515);
             setInputValue('');
         }
     }
 
     return (
         <form onSubmit={handleSubmit}>
+            <p>{inputValue}</p>
             <input
                 type="text"
                 value={inputValue}
