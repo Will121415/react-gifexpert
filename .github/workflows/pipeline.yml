@@ -1,0 +1,29 @@
+name: Deploy to heroku
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy: 
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout code
+        uses: actions/chechout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/chechout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - run: npm ci
+      - run: npm run build --if-present
+      - name: Tests
+        run: npm test
+      - name: Deploy to heroku
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          args: deploy --dir=build --prod
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: 'gif-expert-prod'
+          heroku_email: 'wferneymora@unicesar.edu.co'
