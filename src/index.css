@@ -1,6 +1,10 @@
 * {
   font-family:  Helvetica, Arial, sans-serif
 }
+html {
+  min-height: 100%;
+  position: relative;
+}
 
 body {
   padding: 60px;
@@ -37,4 +41,12 @@ input {
 .card img {
   max-height: 170px;
   min-width: 300px;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
 }
